@@ -87,6 +87,11 @@ namespace Calculadora
             op = 3;
         }
 
+        private void buttonPonto_Click(object sender, EventArgs e)
+        {
+            textBox_display.Text = textBox_display.Text + ".";
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 

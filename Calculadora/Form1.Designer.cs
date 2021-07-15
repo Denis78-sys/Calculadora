@@ -46,7 +46,7 @@
             this.buttonIgual = new System.Windows.Forms.Button();
             this.buttonMultiplicar = new System.Windows.Forms.Button();
             this.buttonDivisao = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.buttonPonto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox_display
@@ -172,7 +172,7 @@
             // 
             this.button_limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_limpar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button_limpar.Location = new System.Drawing.Point(75, 172);
+            this.button_limpar.Location = new System.Drawing.Point(12, 211);
             this.button_limpar.Name = "button_limpar";
             this.button_limpar.Size = new System.Drawing.Size(45, 33);
             this.button_limpar.TabIndex = 11;
@@ -244,22 +244,23 @@
             this.buttonDivisao.UseVisualStyleBackColor = false;
             this.buttonDivisao.Click += new System.EventHandler(this.buttonDivisao_Click);
             // 
-            // label1
+            // buttonPonto
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(114, 208);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Desenvolvido por Denis Marques";
+            this.buttonPonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPonto.Location = new System.Drawing.Point(75, 172);
+            this.buttonPonto.Name = "buttonPonto";
+            this.buttonPonto.Size = new System.Drawing.Size(45, 33);
+            this.buttonPonto.TabIndex = 18;
+            this.buttonPonto.Text = ".";
+            this.buttonPonto.UseVisualStyleBackColor = true;
+            this.buttonPonto.Click += new System.EventHandler(this.buttonPonto_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 224);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(293, 248);
+            this.Controls.Add(this.buttonPonto);
             this.Controls.Add(this.buttonDivisao);
             this.Controls.Add(this.buttonMultiplicar);
             this.Controls.Add(this.buttonIgual);
@@ -308,7 +309,7 @@
         private System.Windows.Forms.Button buttonIgual;
         private System.Windows.Forms.Button buttonMultiplicar;
         private System.Windows.Forms.Button buttonDivisao;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonPonto;
     }
 }
 
